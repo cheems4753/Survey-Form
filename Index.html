@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out this form to let us know how we did!</p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label">Name goes here: <input placeholder="Name" id="name" type="text" required /></label>
+        <label id="email-label">email: <input placeholder="email@email.com" id="email" type="email" required /></label>
+        <label id="number-label">number: <input placeholder="7575" id="number" type="number" min="0" max="10"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>How satisfied were you?</legend>
+        <select id="dropdown">
+            <option value="">Choose one</option>
+            <option value="1">Very satisfied</option>
+            <option value="2">Moderately satisfied</option>
+            <option value="3">Unsatisfied</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Returning Customer?</legend>
+        <label for="returning"><input value="returning" id="returning" name="customer-type" type="radio" class="inline"
+                checked />Returning</label>
+        <label for="first-time"><input value="first-time" id="first-time" name="customer-type" type="radio"
+                class="inline" />First time</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>How often do you shop for our products?</legend>
+        <label for="checkbox">
+            <input value="often" class="inline" id="checkbox" type="checkbox">Often</label>
+        <input value="sometimes" class="inline" id="checbox" type="checkbox">Sometimes</label>
+        <input value="rarely" class="inline" id="checkbox" type="checkbox">Rarely</label>
+
+    </fieldset>
+    <fieldset>
+        <label for="comments">Other comments</label>
+        <textarea id="survey-form" name="comments" rows="3" columns="30" placeholder="My experience was...">
+      </textarea> </fieldset> <input id="submit" type="submit" value="submit" />
+</form>
+</body>
+
+</html>
